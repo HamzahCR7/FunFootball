@@ -41,7 +41,8 @@
 				</div>
 				<div class="lsc_match_score_meta col-4">
 					<span class="lsc_match_score">0-0</span>
-										<span class="lsc_match_time">12:30 AM
+										<span class="lsc_match_time"><p id="demo"></p>
+
 											<br>13/06/2020
 											<br><p class="text-center text-warning">Allianz Stadium</p></span>
 
@@ -355,5 +356,36 @@ Live Stream: You can stream the match via ESPN+ or FuboTV</p>
 			</div>
 		</section>
 </div>
+<script type="text/javascript">
+// Set the date we're counting down to
+var countDownDate = new Date("June 13, 2020 00:30:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Kick Off Begins";
+  }
+}, 1000);
+</script>
+
 </body>
 </html>
