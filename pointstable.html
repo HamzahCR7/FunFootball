@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Points Table</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+			  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css">
+
+
+
+
+*{
+	font-family: Fjalla One;
+  margin: 0;
+	border: 0;
+	padding: 0;
+	color: #3e29a9;
+}
+
+html{
+  background-color: #3e29a9;
+}
+
+.ptable table{
+	margin: 30px auto;
+	border-collapse: collapse;
+}
+
+.ptable{
+	margin: 0px 0% 30px 0%;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th{
+	background-color: black;
+	color: #3e29a9;
+}
+
+.headin{
+	text-align: center;
+	text-decoration: none;
+	color: #ffe221;
+	margin: 30px;
+	display: block;
+}
+
+.wpos{
+	text-align: center;
+}
+
+.wpos td{
+	color: #77ff21;
+}
+
+.pos{
+	text-align: center;
+}
+
+.pos td{
+	color: #ff7b21;
+}
+
+table .col{
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.wpos:hover{
+	background-color: #77ff21;
+}
+
+.wpos:hover td{
+	color: #000000;
+}
+
+.pos:hover{
+	background-color: #ff7b21;
+}
+
+.pos:hover td{
+	color: #000000;
+}
+
+
+	/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  background-color: #3e29a9;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+	#lsc_footer{
+		position: fixed;
+		bottom: 0;
+		background-color: #fff;
+		padding: 0!important;
+		padding-bottom: 30px !important;
+		border-radius: 30px 30px 0 0;
+		border:1px solid rgba(0, 0, 0, .05);
+		z-index: 999999;
+
+
+	}
+	.lsc_footer_tabs ul{
+padding: 0;
+	}
+	.lsc_footer_tabs ul li{
+		list-style: none;
+		float: left;
+		width: 25%;
+		text-align: center;
+		font-size: 18px;
+	}
+		.lsc_footer_tabs ul li span{
+		position: relative;
+		display: inline-block;
+		color: rgba(0, 0, 0, .9);
+		}
+</style>
+<body>
+		<h1 class="text-danger text-center text-transform-uppercase">Click on the tab to see Points table</h1>
+
+<div class="tab text-center">
+  <button class="tablinks" onclick="openCity(event, 'London')">Serie A</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">La Liga</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">EPL</button>
+</div>
+
+<!-- Tab content -->
+<div id="London" class="tabcontent">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
+
+<div class="ptable">
+  <h1 class="headin">Serie A</h1>
+					<table>
+						<tr class="col">
+							<th>#</th>
+							<th>Team</th>
+							<th>GP</th>
+							<th>W</th>
+							<th>D</th>
+							<th>L</th>
+							<th>F/A</th>
+							<th>PTS</th>
+						</tr>
+						<tr class="wpos">
+							<td>1</td>
+							<td>Juventus</td>
+							<td>26</td>
+							<td>20</td>
+							<td>3</td>
+							<td>3</td>
+							<td>50/24</td>
+							<td>63</td>
+						</tr>
+						<tr class="wpos">
+							<td>2</td>
+							<td>Lazio</td>
+							<td>26</td>
+							<td>19</td>
+							<td>5</td>
+							<td>3</td>
+							<td>60/23</td>
+							<td>62</td>
+						</tr>
+						<tr class="wpos">
+							<td>3</td>
+							<td>Inter</td>
+							<td>25</td>
+							<td>16</td>
+							<td>6</td>
+							<td>3</td>
+							<td>49/24</td>
+							<td>54</td>
+						</tr>
+						<tr class="wpos">
+							<td>4</td>
+							<td>Atlanta</td>
+							<td>25</td>
+							<td>14</td>
+							<td>6</td>
+							<td>5</td>
+							<td>70/34</td>
+							<td>48</td>
+						</tr>
+						<tr class="pos">
+							<td>5</td>
+							<td>Roma</td>
+							<td>26</td>
+							<td>13</td>
+							<td>6</td>
+							<td>7</td>
+							<td>51/35</td>
+							<td>45</td>
+						</tr>
+						<tr class="pos">
+							<td>6</td>
+							<td>Napoli</td>
+							<td>26</td>
+							<td>11</td>
+							<td>6</td>
+							<td>9</td>
+							<td>41/36</td>
+							<td>39</td>
+						</tr>
+						<tr class="pos">
+							<td>7</td>
+							<td>Milan</td>
+							<td>26</td>
+							<td>10</td>
+							<td>6</td>
+							<td>10</td>
+							<td>28/34</td>
+							<td>36</td>
+						</tr>
+						<tr class="pos">
+							<td>8</td>
+							<td>Verona</td>
+							<td>25</td>
+							<td>9</td>
+							<td>8</td>
+							<td>8</td>
+							<td>29/26</td>
+							<td>35</td>
+						</tr>
+						<tr class="pos">
+							<td>9</td>
+							<td>Parma</td>
+							<td>25</td>
+							<td>10</td>
+							<td>5</td>
+							<td>10</td>
+							<td>32/31</td>
+							<td>35</td>
+						</tr>
+						<tr class="pos">
+							<td>10</td>
+							<td>Bologona</td>
+							<td>26</td>
+							<td>9</td>
+							<td>7</td>
+							<td>10</td>
+							<td>38/42</td>
+							<td>34</td>
+						</tr>
+						<tr class="pos">
+							<td>11</td>
+							<td>Sassuolo</td>
+							<td>25</td>
+							<td>9</td>
+							<td>5</td>
+							<td>11</td>
+							<td>41/39</td>
+							<td>32</td>
+						</tr>
+					</table>
+
+</div>
+</div>
+
+<div id="Paris" class="tabcontent">
+   <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
+
+<div class="ptable">
+  <h1 class="headin">La Liga</h1>
+					<table>
+						<tr class="col">
+							<th>#</th>
+							<th>Team</th>
+							<th>GP</th>
+							<th>W</th>
+							<th>D</th>
+							<th>L</th>
+							<th>F/A</th>
+							<th>PTS</th>
+						</tr>
+						<tr class="wpos">
+							<td>1</td>
+							<td>Barcelona</td>
+							<td>27</td>
+							<td>18</td>
+							<td>4</td>
+							<td>5</td>
+							<td>63/31</td>
+							<td>58</td>
+						</tr>
+						<tr class="wpos">
+							<td>2</td>
+							<td>Real Madrid</td>
+							<td>27</td>
+							<td>16</td>
+							<td>8</td>
+							<td>3</td>
+							<td>49/19</td>
+							<td>56</td>
+						</tr>
+						<tr class="wpos">
+							<td>3</td>
+							<td>Sevilla</td>
+							<td>28</td>
+							<td>14</td>
+							<td>8</td>
+							<td>6</td>
+							<td>41/29</td>
+							<td>50</td>
+						</tr>
+						<tr class="wpos">
+							<td>4</td>
+							<td>Real Sociedad</td>
+							<td>27</td>
+							<td>14</td>
+							<td>4</td>
+							<td>9</td>
+							<td>45/33</td>
+							<td>46</td>
+							
+						</tr>
+						<tr class="pos">
+							<td>5</td>
+							<td>Getafe</td>
+							<td>28</td>
+							<td>13</td>
+							<td>7</td>
+							<td>8</td>
+							<td>38/27</td>
+							<td>46</td>
+						</tr>
+						<tr class="pos">
+							<td>6</td>
+							<td>Atletico</td>
+							<td>27</td>
+							<td>11</td>
+							<td>12</td>
+							<td>4</td>
+							<td>31/21</td>
+							<td>45</td>
+						</tr>
+						<tr class="pos">
+							<td>7</td>
+							<td>Valencia</td>
+							<td>28</td>
+							<td>11</td>
+							<td>10</td>
+							<td>7</td>
+							<td>39/40</td>
+							<td>43</td>
+						</tr>
+						<tr class="pos">
+							<td>8</td>
+							<td>Granada</td>
+							<td>28</td>
+							<td>12</td>
+							<td>5</td>
+							<td>11</td>
+							<td>35/33</td>
+							<td>41</td>
+						</tr>
+						<tr class="pos">
+							<td>9</td>
+							<td>Villarreal</td>
+							<td>27</td>
+							<td>11</td>
+							<td>5</td>
+							<td>11</td>
+							<td>44/38</td>
+							<td>38</td>
+						</tr>
+						<tr class="pos">
+							<td>10</td>
+							<td>Athletic Club</td>
+							<td>27</td>
+							<td>9</td>
+							<td>10</td>
+							<td>8</td>
+							<td>29/33</td>
+							<td>37</td>
+						</tr>
+						<tr class="pos">
+							<td>11</td>
+							<td>Osasuna</td>
+							<td>27</td>
+							<td>8</td>
+							<td>10</td>
+							<td>9</td>
+							<td>34/38</td>
+							<td>34</td>
+						</tr>
+					</table>
+</div>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+   <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet"> 
+
+<div class="ptable">
+  <h1 class="headin">EPL</h1>
+					<table>
+						<tr class="col">
+							<th>#</th>
+							<th>Team</th>
+							<th>GP</th>
+							<th>W</th>
+							<th>D</th>
+							<th>L</th>
+							<th>F/A</th>
+							<th>PTS</th>
+						</tr>
+						<tr class="wpos">
+							<td>1</td>
+							<td>Liverpool</td>
+							<td>29</td>
+							<td>27</td>
+							<td>1</td>
+							<td>1</td>
+							<td>66/21</td>
+							<td>82</td>
+						</tr>
+						<tr class="wpos">
+							<td>2</td>
+							<td>Man City</td>
+							<td>28</td>
+							<td>18</td>
+							<td>3</td>
+							<td>7</td>
+							<td>68/31</td>
+							<td>57</td>
+						</tr>
+						<tr class="wpos">
+							<td>3</td>
+							<td>Leicester</td>
+							<td>29</td>
+							<td>16</td>
+							<td>5</td>
+							<td>8</td>
+							<td>58/28</td>
+							<td>53</td>
+						</tr>
+						<tr class="wpos">
+							<td>4</td>
+							<td>Chelsea</td>
+							<td>29</td>
+							<td>14</td>
+							<td>6</td>
+							<td>9</td>
+							<td>51/39</td>
+							<td>48</td>
+						</tr>
+						<tr class="pos">
+							<td>5</td>
+							<td>Man Utd</td>
+							<td>29</td>
+							<td>12</td>
+							<td>9</td>
+							<td>8</td>
+							<td>44/30</td>
+							<td>45</td>
+						</tr>
+						<tr class="pos">
+							<td>6</td>
+							<td>Wolves</td>
+							<td>29</td>
+							<td>10</td>
+							<td>13</td>
+							<td>6</td>
+							<td>41/34</td>
+							<td>43</td>
+						</tr>
+						<tr class="pos">
+							<td>7</td>
+							<td>Sheffield Utd</td>
+							<td>28</td>
+							<td>11</td>
+							<td>10</td>
+							<td>7</td>
+							<td>30/25</td>
+							<td>43</td>
+						</tr>
+						<tr class="pos">
+							<td>8</td>
+							<td>Tottenham</td>
+							<td>29</td>
+							<td>11</td>
+							<td>8</td>
+							<td>10</td>
+							<td>47/40</td>
+							<td>41</td>
+						</tr>
+						<tr class="pos">
+							<td>9</td>
+							<td>Arsenal</td>
+							<td>28</td>
+							<td>9</td>
+							<td>13</td>
+							<td>6</td>
+							<td>40/36</td>
+							<td>40</td>
+						</tr>
+						<tr class="pos">
+							<td>10</td>
+							<td>Burnley</td>
+							<td>29</td>
+							<td>11</td>
+							<td>6</td>
+							<td>12</td>
+							<td>34/40</td>
+							<td>39</td>
+						</tr>
+						<tr class="pos">
+							<td>11</td>
+							<td>Crystal Palace</td>
+							<td>29</td>
+							<td>10</td>
+							<td>09/td>
+							<td>10</td>
+							<td>26/32</td>
+							<td>39</td>
+						</tr>
+					</table>
+</div>
+
+</div>
+	<section class="col-12 bg-white"id="lsc_footer">
+			<div class="row lsc_app_footer_row">
+				<div class="col-12 lsc_footer_tabs">
+					<ul>
+						<li><span><i class="fa fa-clock-o"></i></span></li>
+						<li><span><a href="goals ans assists.html"><i class="fa fa-line-chart"></i></a></span></li>
+
+						<li><span><a href="pointstable.html"><i class="fa fa-trophy fa-2px"></i></span></a></li>
+						<li><span><i class="fa fa-futbol-o"></i></span></li>
+
+					</ul>
+					<span class="lsc_sep"></span>
+				</div>
+			</div>
+		</section>
+<script type="text/javascript">
+	function openCity(evt, cityName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+  	// tabcontent[0].style.display="visible";
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+</body>
+</html>
