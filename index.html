@@ -29,6 +29,16 @@ display: flex;
 justify-content: center;
 
 	}
+	div.slide-right {
+  width:100%;
+  overflow:hidden;
+}
+div.slide-right p {
+	animation: slide-right 8s linear infinite;
+}
+
+
+
 
 
 /* 	@media (min-width:260px){
@@ -47,16 +57,23 @@ justify-content: center;
 
 <body>
 
+
+
 <div class="container-fluid">
 
 
 	<div class="row " id="lsc_app"style="background-color: #3e29a9;">
 		<br>
 		<section class="col-12" id="lsc_header_bar">
+
 	<h1 class="text-center text-white"><br>Fun Football</h1>
+
 		</section>
+
 		<section class="col-12" id="lsc_header">
+
 			<div class="row lsc_series_meta_row">
+
 				<div class="col-12">
 					<br>
 					<span class="lsc_series_meta_detail">Final</span>
@@ -260,7 +277,9 @@ justify-content: center;
 		</section>
 </div>
 
-	
+	<div class="slide-right text-danger bg-warning " style="font-size:30px;font-family: italic;font-weight:bold;text-align: center;">
+<p>Only covers the fixtures of <span class="text-white">Real madrid</span> , <span class="text-dark"> Juventus</span>, and <span style="color: red">Liverpool</span></p>
+</div>
 	<section>
 
 		<br>
