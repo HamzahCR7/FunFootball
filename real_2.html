@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Fun Football</title>
+	<title>Match Stats</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="main.css">
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 			  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -24,7 +26,11 @@
 			<div class="row lsc_series_meta_row">
 				<div class="col-12">
 					<span class="lsc_series_meta_detail">MatchDay 29</span>
-					<span class="lsc_series_meta_title">Laliga</span>
+					<span class="lsc_series_meta_title">
+												<img src="imgs/laliga.png"style="width: 100px; height: 90px;">
+
+
+					</span>
 				</div>
 			</div>
 			<div class="lsc_match_meta_row row">
@@ -47,8 +53,9 @@
 				<!-- 	<span class="lsc_match_score">0-0</span>
 										<span class="lsc_match_time">Full Time<br>13/06/2020</span> -->
 										<span class="lsc_match_score">0-0</span>
-										<span class="lsc_match_time"><!-- <p id="demo" class="text-white"> -->
-										FT</p>
+										<span class="lsc_match_time">
+											<p id="demo" class="text-white">
+										</p>
 
 											<br>19/06/2020
 											<br><p class="text-center text-warning">Estadio Alfredo Di Stefano</p></span>
@@ -238,11 +245,12 @@
 			<div class="row lsc_app_footer_row">
 				<div class="col-12 lsc_footer_tabs">
 					<ul>
-					<li><span><a href="index.html"><i class="fa fa-clock-o"></i></a></span></li>
-						<li><span><a href="#"><i class="fa fa-line-chart text-danger"></i></a></span></li>
+					<li><span><a href="index.html"><i class="fa fa-clock-o  fa-2x"></i></a></span></li>
+					<li><span><a href="videos.html"><i class="fa fa-video-camera fa-2x text-primary"></i></a></span></li>
+						<li><span><a href="goals ans assists.html"><i class="fa fa-line-chart text-danger fa-2x"></i></a></span></li>
 
-						<li><span><a href="pointstable.html"><i class="fa fa-trophy fa-2px"></i></span></a></li>
-						<li><span><a href="recentandupcoming.html"><i class="fa fa-futbol-o text-dark"></i></a></span></li>
+						<li><span><a href="pointstable.html"><i class="fa fa-trophy fa-2x"></i></span></a></li>
+						<li><span><a href="recentandupcoming.html"><i class="fa fa-futbol-o text-dark fa-2x"></i></a></span></li>
 
 					</ul>
 					<span class="lsc_sep"></span>
@@ -253,7 +261,7 @@
 </div>
 <script type="text/javascript">
 // Set the date we're counting down to
-var countDownDate = new Date("June 14, 2020 23:30:00").getTime();
+var countDownDate = new Date("June 19, 2020 01:30:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
