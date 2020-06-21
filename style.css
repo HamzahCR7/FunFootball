@@ -214,8 +214,8 @@ padding: 0;
 
 i.card-yellow{
 		position: absolute;
-		width: 9px;
-		height: 14px;
+		width: 15px;
+		height: 20px;
 		display: inline-block;
 		background-color: yellow;
 		margin-top: 0px;
@@ -224,7 +224,7 @@ i.card-yellow{
 	i.card-red{
 		position: absolute;
 		width: 9px;
-		height: 14px;
+		height: 20px;
 		display: inline-block;
 		background-color: red;
 		margin-top: 0px;
