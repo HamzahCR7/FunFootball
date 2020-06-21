@@ -23,7 +23,8 @@
 	padding-bottom: 0px; 
 }
 #lsc_header_bar{
-	position: fixed;
+	/* position: fixed; */
+	position: absolute;
 	top: 0;
 	left: 0;
 	background:rgba(55,39,134,1);
