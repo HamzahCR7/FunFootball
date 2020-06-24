@@ -5,6 +5,7 @@
     <link rel="shortcut icon" type="image/png" href="imgs/favicon.png">
 	<link rel="stylesheet" type="text/css" href="main.css">
     <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <link href='https://fonts.googleapis.com/css?family=Paytone+One' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -21,12 +22,30 @@
 
 </head>
 <style>
+
+
+
+
+
+
+
+
+
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: center
 }
+a{
+  text-decoration: none!important;
+}
+
+
+
+
 	button{
+    text-decoration: none;
+
 		margin: 0 auto;
 		margin-top: 20px;
 padding: 15px 20px;
@@ -42,10 +61,14 @@ color: white;
 display: flex;
 justify-content: center;
 font-size: 20px;
-text-decoration: none;
     box-shadow: 2px 2px 5px #ffffff;
+      transition: opacity .5s ease-out;
+
 
 	}
+  button:hover{
+    opacity: .7;
+  }
 	div.slide-right {
   width:100%;
   overflow:hidden;
@@ -1086,6 +1109,43 @@ div.slide-right p {
 
 
 
+    <section class="col-12" id="lsc_header">
+      <div class="row lsc_series_meta_row">
+        <div class="col-12">
+          <br>
+          <span class="lsc_series_meta_detail">MatchDay 31</span>
+          <span class="lsc_series_meta_title"><img src="imgs/laliga.png"style="width: 100px; height: 90px;"></span>
+        </div>
+      </div>
+      <div class="lsc_match_meta_row row">
+        <div class="col-4 lsc_team_left">
+          <img src="imgs/real.png" class="lsc_team_icon">
+          <div class="lsc_team_stat">
+            
+
+          </div>
+        </div>
+        <div class="lsc_match_score_meta col-4">
+          <span class="lsc_match_score">0-0</span>
+                    <span class="lsc_match_time">                       <p id="demo" class="text-white"></p>               
+            
+<br>25/06/2020
+                      
+                      <br><p class="text-center text-warning"> Alfredo Di Stéfano</p></span>
+                      <br><br>
+                        <div class="wrapper">
+   <a href="#"> <button >View More</button></a>
+</div>
+
+        </div>
+          <div class="col-4 lsc_team_right">
+          <img src="imgs/mallorca.png" class="lsc_team_icon">
+          <div class="lsc_team_stat">
+
+          </div>
+        </div>
+    
+    </section>
 
 	<section class="col-12" id="lsc_header">
 			<div class="row lsc_series_meta_row">
@@ -1132,42 +1192,6 @@ div.slide-right p {
 
 
 
-		<section class="col-12" id="lsc_header">
-			<div class="row lsc_series_meta_row">
-				<div class="col-12">
-					<br>
-					<span class="lsc_series_meta_detail">MatchDay 30</span>
-					<span class="lsc_series_meta_title"><img src="imgs/laliga.png"style="width: 100px; height: 90px;"></span>
-				</div>
-			</div>
-			<div class="lsc_match_meta_row row">
-				<div class="col-4 lsc_team_left">
-					<img src="imgs/realsoc.png" class="lsc_team_icon">
-					<div class="lsc_team_stat">
-						
-
-					</div>
-				</div>
-				<div class="lsc_match_score_meta col-4">
-					<span class="lsc_match_score">1-2</span>
-										<span class="lsc_match_time">							
-<br>22/06/2020
-											
-											<br><p class="text-center text-warning"> Reale Arena</p></span>
-											<br><br>
-												<div class="wrapper">
-   <a href="socreastatsl.html"> <button >View More</button></a>
-</div>
-
-				</div>
-					<div class="col-4 lsc_team_right">
-					<img src="imgs/real.png" class="lsc_team_icon">
-					<div class="lsc_team_stat">
-
-					</div>
-				</div>
-		
-		</section>
 	
 
 
@@ -2293,13 +2317,13 @@ The Portugal forward hit the post from the spot 16 minutes into the game but the
 			<div class="row lsc_app_footer_row">
 				<div class="col-12 lsc_footer_tabs">
 					<ul>
-						<li><span><i class="fa fa-clock-o  fa-2x"></i></span></li>
-												<li><span><a href="videos.html"><i class="fa fa-video-camera fa-2x text-primary"></i></a></span></li>
+						<li><span><i class="fa fa-clock-o  fa-3x"></i></span></li>
+												<li><span><a href="videos.html"><i class="fa fa-video-camera fa-3x text-primary"></i></a></span></li>
 
-						<li><span><a href="goals ans assists.html"><i class="fa fa-line-chart fa-2x"></i></a></span></li>
+						<li><span><a href="goals ans assists.html"><i class="fa fa-line-chart fa-3x"></i></a></span></li>
 
-						<li><span><a href="pointstable.html"><i class="fa fa-trophy fa-2px fa-2x"></i></span></a></li>
-						<li><span><a href="recentandupcoming.html"><i class="fa fa-futbol-o fa-2x"></i></a></span></li>
+						<li><span><a href="pointstable.html"><i class="fa fa-trophy fa-2px fa-3x"></i></span></a></li>
+						<li><span><a href="recentandupcoming.html"><i class="fa fa-futbol-o fa-3x"></i></a></span></li>
 
 					</ul>
 					<span class="lsc_sep"></span>
@@ -2307,11 +2331,13 @@ The Portugal forward hit the post from the spot 16 minutes into the game but the
 			</div>
 		</section>
 
+  
+
 <script type="text/javascript" src="engine1/wowslider.js"></script>
 <script type="text/javascript" src="engine1/script.js"></script>
 <script type="text/javascript">
 // Set the date we're counting down to
-var countDownDate = new Date("June 21, 2020 23:30:00").getTime();
+var countDownDate = new Date("June 25, 2020 01:30:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
